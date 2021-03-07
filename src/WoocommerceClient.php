@@ -19,9 +19,10 @@ class WoocommerceClient
 
     /**
      */
-    public function __construct(Client $client)
+    public function __construct(Client $client, $usingLowerCaseHeaders)
     {
         $this->client = $client;
+        $this->usingLowerCaseHeaders = $usingLowerCaseHeaders;
     }
 
     /**
